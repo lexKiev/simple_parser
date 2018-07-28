@@ -71,8 +71,6 @@ function parseCatalog($url)
 		if ($item->title == "Следующая") {
 			echo "next " . BASE_URL . $item->href . PHP_EOL;
 			parseCatalog(BASE_URL . $item->href);
-		} else {
-			exit('done');
 		}
 	}
 }
